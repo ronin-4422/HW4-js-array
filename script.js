@@ -55,11 +55,11 @@ function filterRangeInPlace(arr, a, b) {
  console.log('------------- # 10')
  function splitString(stringToSplit, separator) {
     let arrayOfStrings = stringToSplit.split(separator);
-    // console.log(stringToSplit);
     console.log(arrayOfStrings);
+    console.log(separator);
   }
   
-  let tempestString = 'Вот это прикол))';
+  let tempestString = 'Вот это прикол';
   let phraseString = 'Стремитесь не к успеху, а к ценностям, которые он дает';
   let monthString = 'Янв,Фев,Мар,Апр,Май,Июн,Июл,Авг';
   
@@ -68,7 +68,6 @@ function filterRangeInPlace(arr, a, b) {
   
   splitString(tempestString, space);
   splitString(phraseString, space);
-  splitString(tempestString);
   splitString(monthString, comma);
 
   console.log('------------- # 11')
