@@ -1,14 +1,13 @@
 console.log('------------- # 4')
-// function ask(question, yes, no) {
-//     if (confirm(question)) yes()
-//     else no();
-//   }  
-// ask(
-// "Вы согласны?",
-// () => alert("Вы согласились.") ,
-// () => alert("Вы отменили выполнение.")
-// );
-// console.log(ask());
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+  }  
+ask(
+"Вы согласны?",
+yes = () => console.log("Вы согласились.") ,
+no = () => console.log("Вы отменили выполнение.")
+);
 
 console.log('------------- # 5')
 let string = 'my, short, string';
@@ -77,3 +76,12 @@ function filterRange(arr, a, b){
 }
 console.log(filterRange(array, 1, 6));
 console.log(array);
+
+console.log('------------- # 12')
+function sum(...spread) {
+    let sum = 0;
+    for (let numbers of spread) 
+    sum += numbers;
+    return sum;
+  }
+  console.log(sum(10,9,30));
